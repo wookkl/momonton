@@ -41,7 +41,6 @@ function paintTodo(text) {
 }
 function loadToDos() {
   const loadedToDos = localStorage.getItem(TODOS_LS);
-  console.log(loadedToDos);
   if (loadedToDos !== null) {
     const parsedToDos = JSON.parse(loadedToDos);
     parsedToDos.forEach(function (toDo) {
