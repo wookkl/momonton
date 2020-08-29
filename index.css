@@ -1,6 +1,12 @@
 body {
-  background-color: teal;
+  background-color: #ecf0f1;
 }
-h1 {
-  background-color: white;
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
 }
