@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1 class="js-title">00:00</h1>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
+    <header>
+      <div class="header__colomn">
+        <div class="header__colomn--links">Links</div>
+        <div class="header__colomn--icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="header__column"><span class="js-weather"></span></div>
+    </header>
+    <main>
+      <div class="js-clock">
+        <h1 class="js-title">00:00</h1>
+      </div>
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
+      </form>
+      <ul class="js-toDoList"></ul>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/9d1ca604ee.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>

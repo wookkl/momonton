@@ -1,7 +1,32 @@
+@import "reset.css";
 body {
   background-color: #34495e;
+  color: white;
+  padding: 18px 20px;
 }
-
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 230px;
+}
+.header__colomn {
+  display: flex;
+  align-items: center;
+}
+.header__colomn--links {
+  font-size: 17px;
+}
+.header__colomn--links {
+  margin-right: 16px;
+}
+main {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .form,
 .greetings {
   display: none;

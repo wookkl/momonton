@@ -14,7 +14,7 @@ function getWeather(lat, lon) {
     .then(function (json) {
       const temerature = json.main.temp;
       const place = json.name;
-      weather.innerText = `${temerature} @ ${place}`;
+      weather.innerText = `${temerature}°C @ ${place}`;
     });
 }
 function saveCoords(coordsObj) {
