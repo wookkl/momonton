@@ -4,11 +4,11 @@ body {
   color: white;
   padding: 18px 20px;
 }
-header {
+.momonton__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 230px;
+  margin-bottom: 180px;
 }
 .header__colomn {
   display: flex;
@@ -20,20 +20,59 @@ header {
 .header__colomn--links {
   margin-right: 16px;
 }
-main {
-  display: flex;
+.momonton__main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.form,
-.greetings {
+.momonton__toDoForm,
+.momonton__clock,
+.momonton__form,
+.momonton__greetings {
   display: none;
 }
+.momonton__form--hello {
+  display: block;
+}
+.momonton__form {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.momonton__form input {
+  margin-top: 32px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid white;
+  outline: none;
+  font-size: 32px;
+  color: inherit;
+  text-align: center;
+}
+.momonton__toDoForm {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.momonton__toDoForm input {
+  background: none;
+  border: none;
+  border-bottom: 3px solid white;
 
+  outline: none;
+  font-size: 32px;
+  color: inherit;
+  text-align: center;
+}
+.momonton__toDoForm input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
 .showing {
   display: block;
+}
+.showing-flex {
+  display: flex;
 }
 
 @keyframes fadeIn {
@@ -45,11 +84,49 @@ main {
   }
 }
 .bgImage {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
   animation: fadeIn 1s ease-in-out;
+}
+.momonton__title {
+  font-size: 150px;
+}
+
+.momonton__form--hello {
+  font-size: 64px;
+}
+.momonton__greetings {
+  margin-top: 20px;
+  font-size: 52px;
+}
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.toDoList li:first-child {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.toDoList li {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+.toDoList li button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  color: white;
+}
+.momonton__toDoForm--today {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  font-size: 32px;
 }

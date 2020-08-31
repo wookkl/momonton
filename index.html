@@ -3,31 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Momonton</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header>
+    <header class="momonton__header">
       <div class="header__colomn">
-        <div class="header__colomn--links">Links</div>
+        <div class="header__colomn--links"><a href="#">Links</a></div>
         <div class="header__colomn--icon">
           <i class="fas fa-search"></i>
         </div>
       </div>
       <div class="header__column"><span class="js-weather"></span></div>
     </header>
-    <main>
-      <div class="js-clock">
-        <h1 class="js-title">00:00</h1>
+    <main class="momonton__main">
+      <div class="momonton__column">
+        <div class="js-clock momonton__clock">
+          <h1 class="js-title momonton__title">00:00</h1>
+        </div>
       </div>
-      <form class="js-form form">
-        <input type="text" placeholder="What is your name?" />
-      </form>
-      <h4 class="js-greetings greetings"></h4>
-      <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
-      </form>
-      <ul class="js-toDoList"></ul>
+      <div class="momonton__column">
+        <form class="js-form momonton__form">
+          <span class="momonton__form--hello">Hello, what's your name?</span>
+          <input type="text" placeholder="" />
+        </form>
+      </div>
+      <div class="momonton__column">
+        <h4 class="js-greetings momonton__greetings"></h4>
+      </div>
+      <div class="momonton__column">
+        <form class="js-toDoForm momonton__toDoForm">
+          <span class="momonton__toDoForm--today"
+            >What is your main focus for today?</span
+          >
+          <input type="text" placeholder="" />
+        </form>
+      </div>
+      <div class="momonton__column">
+        <ul class="js-toDoList toDoList"></ul>
+      </div>
     </main>
     <script
       src="https://kit.fontawesome.com/9d1ca604ee.js"
