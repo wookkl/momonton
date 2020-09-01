@@ -1,30 +1,3 @@
-@import "reset.css";
-@import "keyframes.css";
-body {
-  background-color: #34495e;
-  color: white;
-  padding: 18px 20px;
-  animation: fadeIn 1.5s ease-in-out;
-}
-.weather {
-  font-size: 18px;
-}
-.momonton__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 100px;
-}
-.header__colomn {
-  display: flex;
-  align-items: center;
-}
-.header__colomn--links {
-  font-size: 17px;
-}
-.header__colomn--links {
-  margin-right: 16px;
-}
 .momonton__main {
   display: flex;
   flex-direction: column;
@@ -80,15 +53,6 @@ body {
   display: flex;
 }
 
-.bgImage {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  animation: fadeIn 1s ease-in-out;
-}
 .momonton__title {
   font-size: 150px;
 }
@@ -141,15 +105,4 @@ body {
 .toDoList button:hover {
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
-}
-.momonton__footer {
-  display: flex;
-  position: fixed;
-  bottom: 20px;
-  right: 0;
-  left: 0;
-  justify-content: center;
-}
-.wiseSaying {
-  font-size: 18px;
 }

@@ -1,0 +1,19 @@
+.momonton__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.weather {
+  font-size: 18px;
+}
+.header__colomn {
+  display: flex;
+  align-items: center;
+}
+.header__colomn--links {
+  font-size: 17px;
+}
+.header__colomn--links {
+  margin-right: 16px;
+}

@@ -1,0 +1,11 @@
+.momonton__footer {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  justify-content: center;
+}
+.wiseSaying {
+  font-size: 18px;
+}

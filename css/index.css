@@ -1,0 +1,20 @@
+@import "reset.css";
+@import "keyframes.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+body {
+  background-color: #34495e;
+  color: white;
+  padding: 18px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 1s ease-in-out;
+}
