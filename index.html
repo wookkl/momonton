@@ -14,24 +14,26 @@
           <i class="fas fa-search"></i>
         </div>
       </div>
-      <div class="header__column"><span class="js-weather"></span></div>
+      <div class="header__column">
+        <div class="weather"><span class="js-weather"></span></div>
+      </div>
     </header>
     <main class="momonton__main">
-      <div class="momonton__column">
+      <div class="momonton__row">
         <div class="js-clock momonton__clock">
           <h1 class="js-title momonton__title">00:00</h1>
         </div>
       </div>
-      <div class="momonton__column">
+      <div class="momonton__row">
         <form class="js-form momonton__form">
           <span class="momonton__form--hello">Hello, what's your name?</span>
           <input type="text" placeholder="" />
         </form>
       </div>
-      <div class="momonton__column">
+      <div class="momonton__row">
         <h4 class="js-greetings momonton__greetings"></h4>
       </div>
-      <div class="momonton__column">
+      <div class="momonton__row">
         <form class="js-toDoForm momonton__toDoForm">
           <span class="momonton__toDoForm--today"
             >What is your main focus for today?</span
@@ -39,10 +41,15 @@
           <input type="text" placeholder="" />
         </form>
       </div>
-      <div class="momonton__column">
-        <ul class="js-toDoList toDoList"></ul>
+      <div class="momonton__row">
+        <ul class="js-toDoList toDoList">
+          <li>TODAY</li>
+        </ul>
       </div>
     </main>
+    <footer class="momonton__footer">
+      <div class="js-wiseSaying wiseSaying"></div>
+    </footer>
     <script
       src="https://kit.fontawesome.com/9d1ca604ee.js"
       crossorigin="anonymous"
@@ -52,5 +59,6 @@
     <script src="todo.js"></script>
     <script src="background.js"></script>
     <script src="weather.js"></script>
+    <script src="wiseSaying.js"></script>
   </body>
 </html>

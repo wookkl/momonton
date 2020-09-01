@@ -1,14 +1,19 @@
 @import "reset.css";
+@import "keyframes.css";
 body {
   background-color: #34495e;
   color: white;
   padding: 18px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.weather {
+  font-size: 18px;
 }
 .momonton__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
 }
 .header__colomn {
   display: flex;
@@ -75,14 +80,6 @@ body {
   display: flex;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .bgImage {
   position: fixed;
   top: 0;
@@ -116,11 +113,19 @@ body {
 }
 .toDoList li {
   display: flex;
-  align-items: center;
   font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .toDoList li button {
+  visibility: hidden;
+  outline: none;
+  text-align: center;
   background: none;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
   border: none;
   margin-left: 10px;
   color: white;
@@ -129,4 +134,22 @@ body {
   margin-top: 45px;
   margin-bottom: 15px;
   font-size: 32px;
+}
+.toDoList:hover button {
+  visibility: visible;
+}
+.toDoList button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.momonton__footer {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  justify-content: center;
+}
+.wiseSaying {
+  font-size: 18px;
 }

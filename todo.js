@@ -23,7 +23,7 @@ function paintTodo(text) {
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = toDos.length + 1;
-  delBtn.innerHTML = "+";
+  delBtn.innerHTML = "X";
   delBtn.addEventListener("click", deleteToDo);
   span.innerText = text;
   li.appendChild(span);
@@ -45,6 +45,7 @@ function loadToDos() {
     const parsedToDos = JSON.parse(loadedToDos);
     parsedToDos.forEach(function (toDo) {
       paintTodo(toDo.text);
+      toDoForm.classList.remove();
     });
   }
 }
