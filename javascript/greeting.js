@@ -2,8 +2,8 @@ const form = document.querySelector(".js-form"),
   input = form.querySelector("input"),
   greeting = document.querySelector(".js-greetings"),
   clock = document.querySelector(".js-clock"),
-  toDoForm = document.querySelector(".js-toDoForm"),
-  toDoList = document.querySelector(".js-toDoList");
+  greetToDoForm = document.querySelector(".js-toDoForm"),
+  greetToDoList = document.querySelector(".js-toDoList");
 const USER_LS = "currentUser",
   SHOWING_ON = "showing";
 SHOWING_ON_FLEX = "showing-flex";
@@ -22,8 +22,8 @@ function askForName() {
 }
 
 function paintGreeting(text) {
-  toDoList.classList.add(SHOWING_ON_FLEX);
-  toDoForm.classList.add(SHOWING_ON_FLEX);
+  greetToDoList.classList.add(SHOWING_ON_FLEX);
+  greetToDoForm.classList.add(SHOWING_ON_FLEX);
   form.classList.remove(SHOWING_ON_FLEX);
   greeting.classList.add(SHOWING_ON);
   clock.classList.add(SHOWING_ON);
