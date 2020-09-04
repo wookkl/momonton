@@ -2,7 +2,6 @@ const form = document.querySelector(".js-form"),
   input = form.querySelector("input"),
   greeting = document.querySelector(".js-greetings"),
   clock = document.querySelector(".js-clock"),
-  toDoForm = document.querySelector(".js-toDoForm"),
   toDoList = document.querySelector(".js-toDoList");
 const USER_LS = "currentUser",
   SHOWING_ON = "showing";
