@@ -1,10 +1,8 @@
 const weather = document.querySelector(".js-weather");
-
 const COORDS = "coords";
 const API_KEY = "0a5713693f32337a65860ad7cd5ee78f";
 
 function getWeather(lat, lon) {
-  console.log(lat, lon);
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
   )
@@ -14,7 +12,13 @@ function getWeather(lat, lon) {
     .then(function (json) {
       const temerature = json.main.temp;
       const place = json.name;
-      weather.innerText = `${Math.floor(temerature)}°C @ ${place}`;
+      const span = document.createElement("span");
+      const icon = document.createElement("img");
+      const src = `http://openweathermap.org/img/wn/${json.weather[0].icon}.png`;
+      icon.src = src;
+      span.innerText = `${Math.floor(temerature)}°C @ ${place}`;
+      weather.appendChild(span);
+      weather.appendChild(icon);
     });
 }
 function saveCoords(coordsObj) {
