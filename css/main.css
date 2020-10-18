@@ -47,6 +47,17 @@
 .momonton__toDoForm input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
+.momonton__row:last-child{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.momonton__row:last-child ul{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
 .showing {
   display: block;
   animation: fadeIn 1s ease-in-out;
