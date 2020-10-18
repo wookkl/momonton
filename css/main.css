@@ -1,24 +1,30 @@
+@import "weather.css";
+@import "toDoList.css";
+
 .momonton__main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.toDoList,
+
 .momonton__toDoForm,
 .momonton__clock,
 .momonton__form,
 .momonton__greetings {
   display: none;
 }
+
 .momonton__form--hello {
   display: block;
 }
+
 .momonton__form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .momonton__form input {
   margin-top: 32px;
   background: none;
@@ -29,11 +35,13 @@
   color: inherit;
   text-align: center;
 }
+
 .momonton__toDoForm {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .momonton__toDoForm input {
   background: none;
   border: none;
@@ -44,24 +52,35 @@
   color: inherit;
   text-align: center;
 }
+
 .momonton__toDoForm input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
+
 .momonton__row:last-child{
   display: flex;
   justify-content: center;
   width: 30%;
 }
+
 .momonton__row:last-child ul{
   flex: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
+
+.momonton__toDoForm--today {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+
 .showing {
   display: block;
   animation: fadeIn 1s ease-in-out;
 }
+
 .showing-flex {
   display: flex;
   animation: fadeIn 1s ease-in-out;
@@ -74,48 +93,9 @@
 .momonton__form--hello {
   font-size: 64px;
 }
+
 .momonton__greetings {
   margin-top: 20px;
   font-size: 52px;
 }
-.toDoList {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-.toDoList li:first-child {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.toDoList li {
-  display: flex;
-  font-size: 30px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-.toDoList li button {
-  visibility: hidden;
-  outline: none;
-  text-align: center;
-  background: none;
-  border-radius: 50%;
-  height: 22px;
-  width: 22px;
-  border: none;
-  margin-left: 10px;
-  color: white;
-}
-.momonton__toDoForm--today {
-  margin-top: 45px;
-  margin-bottom: 15px;
-  font-size: 32px;
-}
-.toDoList:hover button {
-  visibility: visible;
-}
-.toDoList button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-}
+

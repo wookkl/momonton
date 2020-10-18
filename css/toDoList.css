@@ -1,0 +1,46 @@
+
+.toDoList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .toDoList li:first-child {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .toDoList{
+      display: none;
+  }
+  .toDoList li {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .toDoList li button {
+    visibility: hidden;
+    outline: none;
+    text-align: center;
+    background: none;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: none;
+    margin-left: 10px;
+    color: white;
+  }
+  
+  
+  .toDoList:hover button {
+    visibility: visible;
+  }
+  
+  .toDoList button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  

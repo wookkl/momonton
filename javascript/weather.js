@@ -14,7 +14,7 @@ function getWeather(lat, lon) {
       const place = json.name;
       const span = document.createElement("span");
       const icon = document.createElement("img");
-      const src = `http://openweathermap.org/img/wn/${json.weather[0].icon}.png`;
+      const src = `http://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`;
       icon.src = src;
       span.innerText = `${Math.floor(temerature)}°C @ ${place}`;
       weather.appendChild(span);
