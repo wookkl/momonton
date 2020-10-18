@@ -3,11 +3,16 @@
 @import "header.css";
 @import "main.css";
 @import "footer.css";
+
 body {
   background-color: #34495e;
   color: white;
   padding: 18px 20px;
   animation: fadeIn 1.5s ease-in-out;
+}
+
+ul li{
+  text-indent: 20px;
 }
 .bgImage {
   position: fixed;

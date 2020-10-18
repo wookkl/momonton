@@ -8,9 +8,9 @@
 
 ## Feature
 - [x] Clock
-- [x] To Do List
-- [x] Weather
-- [x] Daily Quote
+- [x] To Do List [Pending/Finished]
+- [x] Weather [(Using openWeatherMap api)](https://openweathermap.org/)
+- [x] Daily Quote[(Using famous quotes api)](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373)
 - [x] Daily Photo[(Using unsplash api)](https://source.unsplash.com/)
 - [x] Offline Support
 
