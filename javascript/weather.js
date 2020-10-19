@@ -13,11 +13,15 @@ function getWeather(lat, lon) {
       const temerature = json.main.temp;
       const place = json.name;
       const span = document.createElement("span");
+      const weatherIs = document.createElement("span");
       const icon = document.createElement("img");
       const src = `http://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`;
+      console.log(json.weather[0]);
       icon.src = src;
+      weatherIs.innerText = `Today weather is ${json.weather[0].main}~!`;
       span.innerText = `${Math.floor(temerature)}°C @ ${place}`;
       weather.appendChild(span);
+      weather.appendChild(weatherIs);
       weather.appendChild(icon);
     });
 }
